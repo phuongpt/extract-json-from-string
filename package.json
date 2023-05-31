@@ -5,6 +5,7 @@
   "main": "lib/extract-json-from-string.js",
   "scripts": {
     "test": "gulp",
+    "build": "gulp build",
     "cover": "nyc --reporter=html --reporter=lcov --reporter=text-summary mocha --timeout=3000 --reporter=dot test/**/*.js",
     "travis": "gulp ci",
     "codeclimate": "codeclimate-test-reporter < coverage/lcov-report/index.html"
@@ -34,7 +35,9 @@
     "node": ">=0.10.0"
   },
   "homepage": "https://github.com/tandrewnichols/extract-json-from-string",
-  "dependencies": {},
+  "dependencies": {
+    "best-effort-json-parser": "^1.0.1"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
